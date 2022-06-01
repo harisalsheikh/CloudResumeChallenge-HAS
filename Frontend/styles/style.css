@@ -47,7 +47,55 @@ ul.navigation li a{
 .headline {
     color: #fff;
     margin: auto;
-    font-size: 30px;
+    font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: -2px;
+}
+
+.homepage{
+    color: #fff;
+    font-size: 20px;
+}
+
+.rowEducation {
+    padding-top: 90px;
+    padding-bottom: 72px;   
+}
+
+::before{
+    content: " ";
+    display: table;
+}
+
+h1 span{ 
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+    float: left;
+    color: #fff;
+}
+
+h3{
+    font: 20px 'opensans-bold', sans-serif;
+    color: #fff;
+}
+
+.info .date{
+    color: #fff;
+}
+
+/**About me **/
+
+h2{
+    font: bold;
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+
+.challenge{
+    color: black;
+    font: bold;
+    text-decoration: none;
+    line-height: inherit;
 }
