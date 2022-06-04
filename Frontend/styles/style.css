@@ -52,10 +52,17 @@ ul.navigation li a{
     letter-spacing: -2px;
 }
 
+
 .homepage{
     color: #fff;
     font-size: 20px;
 }
+
+a .homepage .counter{
+    color: #FF0000;
+    font-style: italic;
+}
+
 
 .rowEducation {
     padding-top: 90px;
