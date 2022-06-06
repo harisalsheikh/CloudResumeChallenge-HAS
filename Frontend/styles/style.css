@@ -58,7 +58,7 @@ ul.navigation li a{
     font-size: 20px;
 }
 
-a .homepage .counter{
+.counter{
     color: #FF0000;
     font-style: italic;
 }
