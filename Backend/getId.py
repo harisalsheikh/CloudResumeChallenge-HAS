@@ -1,15 +1,20 @@
 import boto3
+from boto3.dynamodb.conditions import Key
 
 def lambda_handler(event, context):
     
     client = boto3.resource("dynamodb")
     table = client.Table("CloudResumeChallenge")
     
-    count_id = table.scan()["Items"]
+    # Get all items 
+    scan_table = table.scan()["Items"]
     
-    count_list = []
+    # Get Counter Item from table
     
-    for count in count_id: 
-        count_list += count_id["Counter"]
+    #empty list to store content of the "Counter" Item
+    item = []
     
-    return count_list
+    for items in scan_table:
+        item.append(items["Counter"])
+        
+    return item
